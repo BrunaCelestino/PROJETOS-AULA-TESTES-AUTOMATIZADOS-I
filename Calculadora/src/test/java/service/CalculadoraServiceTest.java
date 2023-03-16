@@ -19,7 +19,7 @@ public class CalculadoraServiceTest  {
         int a = 2;
         int b = 2;
         // When: somar
-       int soma =  service.somar(a, b);
+        int soma =  service.somar(a, b);
         // Then: resultado deve ser igual 4
         assertEquals(4, soma);
     }
@@ -55,5 +55,10 @@ public class CalculadoraServiceTest  {
         int multiplicacao =  service.multiplicar(a, b);
         // Then: resultado deve ser igual 4
         assertEquals(4, multiplicacao);
+    }
+
+    @Test
+    public void calcularAreaQuadrado() {
+
     }
 }
