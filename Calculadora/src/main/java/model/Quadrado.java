@@ -1,14 +1,11 @@
 package model;
 
-public class Quadrado {
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@Data
+@AllArgsConstructor
+public class Quadrado extends FormaGeometrica{
     private double lado;
 
-    public double getLado() {
-        return lado;
-    }
-
-    public void setLado(double lado) {
-        this.lado = lado;
-    }
 }

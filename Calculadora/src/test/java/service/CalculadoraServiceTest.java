@@ -18,8 +18,10 @@ public class CalculadoraServiceTest  {
         // Given: dois inteiros
         int a = 2;
         int b = 2;
+
         // When: somar
         int soma =  service.somar(a, b);
+
         // Then: resultado deve ser igual 4
         assertEquals(4, soma);
     }
@@ -29,8 +31,10 @@ public class CalculadoraServiceTest  {
         // Given: dois inteiros
         int a = 2;
         int b = 2;
+
         // When: subtrair
         int subtracao =  service.subtrair(a, b);
+
         // Then: resultado deve ser igual 0
         assertEquals(0, subtracao);
     }
@@ -40,10 +44,13 @@ public class CalculadoraServiceTest  {
         // Given: dois inteiros
         int a = 2;
         int b = 2;
+
         // When: dividir
         int divisao =  service.dividir(a, b);
+
         // Then: resultado deve ser igual 1
         assertEquals(1, divisao);
+        assertNotEquals(2, divisao);
     }
 
     @Test
@@ -51,14 +58,13 @@ public class CalculadoraServiceTest  {
         // Given: dois inteiros
         int a = 2;
         int b = 2;
+
         // When: multiplicar
         int multiplicacao =  service.multiplicar(a, b);
+
         // Then: resultado deve ser igual 4
         assertEquals(4, multiplicacao);
+        assertFalse(4 != multiplicacao);
     }
 
-    @Test
-    public void calcularAreaQuadrado() {
-
-    }
 }
